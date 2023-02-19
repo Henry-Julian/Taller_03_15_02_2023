@@ -1,14 +1,17 @@
-//1. Realizar un programa que permita leer 2 números diferentes y nos diga cual es el mayor de los 2 números.
+// 2.	Realice un programa que calcule el máximo de N números leídos desde teclado.
 
-let num1 = Number(prompt("Señor usuario, ingrese el primer número"));
-let num2 = Number(prompt("Señor usuario, ingrese el segundo número"));
+let num, mayor= 0;
 
-
-if (num1 == num2) {
-    console.log(`Tanto el número ${num1} como el número ${num2} son iguales`);
-} else if (num1 > num2) {
-    console.log(`El número ${num1} es mayor que el número ${num2}`);
-} else {
-    console.log(`El número ${num2} es mayor que el número ${num1}`);
+do{
+    num=Number(prompt("Señor usuario, por favor ingrese un número. Posteriormente le da aceptar para seguir ingresando más números y cuando desee terminar presione el número 0 para que el programa le indique cuál de los números ingresados es el mayor"));
+    console.log(`El número ingresado fue ${num}`);
+    if (num > mayor){
+    mayor=num;
+    }
 }
+    while(num != 0){
+    console.log(`De los números ingresados, el mayor de éstos es: ${mayor}`);
+    }
+
+
 
