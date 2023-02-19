@@ -1,17 +1,9 @@
-// 2.	Realice un programa que calcule el máximo de N números leídos desde teclado.
+// 3.	Realizar un programa que pueda sumar dos números leídos por teclado y escribir el resultado.
 
-let num, mayor= 0;
+let num1 = Number(prompt("Señor usuario, ingrese el primer número"));
+let num2 = Number(prompt("Señor usuario, ingrese el segundo número"));
 
-do{
-    num=Number(prompt("Señor usuario, por favor ingrese un número. Posteriormente le da aceptar para seguir ingresando más números y cuando desee terminar presione el número 0 para que el programa le indique cuál de los números ingresados es el mayor"));
-    console.log(`El número ingresado fue ${num}`);
-    if (num > mayor){
-    mayor=num;
-    }
-}
-    while(num != 0){
-    console.log(`De los números ingresados, el mayor de éstos es: ${mayor}`);
-    }
+console.log(`Señor usuario, la suma de los 2 números ingresados es: ${num1+num2}`)
 
 
 
